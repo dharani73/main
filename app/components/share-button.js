@@ -29,27 +29,5 @@ export default class ShareButtonComponent extends Component {
 
     return url;
   }
-
 }
-// @service store;
-  
-// async delete(id) {
-//   let confirmed = window.confirm('Are you sure you want to delete the post?');
-//   if (confirmed) {
-//     let posts = await this.store.peekRecord('post', id);
-//     console.log(posts);
-//     posts.destroyRecord();
-//   }
-// }
-// async delete(id){
-//   let confirmed = window.confirm('Are you sure you want to delete the post?');
-//   if (confirmed) {
-//         let posts = await this.store.peekRecord('post', id);
-//         console.log(posts);
-//         posts.destroyRecord();
-// }
-// }
-// @action
-// delete(){
-// console.log('hi');
-// }
+
