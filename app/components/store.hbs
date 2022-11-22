@@ -1,0 +1,43 @@
+{{!-- {{#each model as |post|}} --}}
+<article class='store'>
+  <Store::Image
+    src={{@post.image}}
+    alt='A picture of
+  {{@post.title}}'
+  />
+  <div class='details'>
+    <h3>
+      <LinkTo @route='store' @model={{@post.id}}>
+        {{@post.title}} 
+        {{@post.id}}
+      </LinkTo>
+      {{!-- <button type="button" {{on "click" (fn this.delete @post.id)}}>Delete</button> --}}
+      {{!-- <button type="button" {{on "click" this.delete}}>Delete</button> --}}
+      {{!-- <a {{on 'click' this.deletePost}}>Click Me!</a>  --}}
+      {{!-- <button type="button" onclick={{action "delete" post.id}}></button> --}}
+      {{!-- (fn  posts.id) --}}
+       {{!-- {{#link-to "store" {@post.id}}}
+        {{@post.title}} 
+     {{/link-to}} --}}
+    </h3>
+    <div class='detail homedelivery'>
+      <span>homedelivery:</span>-
+      {{@post.homedelivery}}
+    </div>
+    <div class='detail location'>
+      <span>location:</span>
+      {{@post.location}}
+    </div>
+    <div class='detail Rating'>
+      <span>Rating:</span>
+      {{@post.rating}}
+    </div>
+    <div class='detail stock'>
+      <span>stock:</span>
+      {{@post.stock}}
+    </div>
+    
+  </div>
+
+</article>
+  {{!-- {{/each}} --}}
