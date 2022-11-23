@@ -9,9 +9,10 @@
     <h3>
       <LinkTo @route='store' @model={{@post.id}}>
         {{@post.title}} 
-        {{@post.id}}
+        {{!-- {{@post.id}} --}}
       </LinkTo>
       <button type="button" {{on "click" (fn this.deletePost @post.id)}}>Delete</button>
+      
       {{!-- <button type="button" {{on "click" this.deletePost}}>Delete</button> --}}
       {{!-- <a {{on 'click' this.deletePost}}>Click Me!</a>  --}}
       {{!-- <button type="button" onclick={{action "delete" post.id}}></button> --}}
@@ -40,4 +41,5 @@
   </div>
 
 </article>
+
   {{!-- {{/each}} --}}

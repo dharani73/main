@@ -25,7 +25,9 @@ button {
     Arial, sans-serif;
   line-height: 1.5;
 }
-
+/* .button{
+color: white;
+} */
 body {
   background: #f3f3f3;
 }

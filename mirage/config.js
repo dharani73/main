@@ -22,4 +22,5 @@ export default function () {
   this.get('/posts');
   this.get('/posts/:id');
   this.del('/posts/:id');
+  this.post('/posts');
 }
