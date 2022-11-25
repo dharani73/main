@@ -10,6 +10,8 @@ Router.map(function () {
   this.route('about');
   this.route('contact', { path: '/getting-in-touch' });
   this.route('store', { path: '/posts/:post_id' });
+  this.route('create', { path: '/posts/newpost' });
   // this.route('grocery');
-  this.route('create');
+
+  this.route('edit', { path: '/posts/:id/edit' });
 });

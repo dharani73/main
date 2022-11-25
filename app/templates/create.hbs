@@ -1,28 +1,29 @@
 <h4>create a post</h4>
-<form  {{on "submit" this.createPost}}>
+<form {{on "submit" this.createPost}}>
     <div>
-        <label for="title">Title</label>
-        <input type="text" class="title">
+        <label for="title">title</label>
+        <Input id="title" @value={{this.title}} />
     </div>
     <div>
         <label for="homedelivery">homedelivery</label>
-        <input type="text" class="homedelivery">
+        <Input id="homedelivery" @value={{this.homedelivery}} />
     </div>
     <div>
         <label for="location">location</label>
-        <input type="text" class="location">
+        <Input id="location" @value={{this.location}} />
     </div>
     <div>
         <label for="rating">rating</label>
-        <input type="text" class="rating">
+       <Input id="rating" @value={{this.rating}} />
     </div>
      <div>
         <label for="stock">stock</label>
-        <input type="text" class="stock">
+        <Input id="stock" @value={{this.stock}} />
     </div>
     <div>
         <label for="image">image</label>
-        <input type="url" class="image">
+        <Input id="image" @value={{this.image}} />
     </div>
     <button type="submit">Create</button>
 </form>
+{{!-- {{on "submit" this.createPost}} --}}
