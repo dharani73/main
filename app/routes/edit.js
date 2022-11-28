@@ -3,6 +3,6 @@ import { inject as service } from '@ember/service';
 export default class EditRoute extends Route {
     @service store;
   async model(params) {
-    return await this.store.findRecord('post', params.post_id);
+    return await this.store.findRecord('post', params.id);
   }
 }

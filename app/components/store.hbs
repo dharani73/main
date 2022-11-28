@@ -12,7 +12,7 @@
         {{!-- {{@post.id}} --}}
       </LinkTo>
       <button type="button" {{on "click" (fn this.deletePost @post.id)}}>Delete</button>
-      <button  class="button" style="color:white" type="button"><LinkTo @route="edit" @model={{@post.id}}>Edit</LinkTo></button>
+      <button  class="button" type="button"><LinkTo @route="edit" @model={{@post.id}}>Edit</LinkTo></button>
       
       {{!-- <button type="button" {{on "click" this.deletePost}}>Delete</button> --}}
       {{!-- <a {{on 'click' this.deletePost}}>Click Me!</a>  --}}
