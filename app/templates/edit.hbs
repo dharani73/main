@@ -2,27 +2,27 @@
 <form {{on "submit" this.editPost}}>
     <div>
         <label for="title">title</label>
-       <Input @id="title" @type="text" @value={{this.title}} />
+       <Input id="title" @type="text" @value={{@model.title}} />
     </div>
     <div>
         <label for="homedelivery">homedelivery</label>
-        <Input @id="homedelivery" @type="text" @value={{this.homedelivery}} />
+        <Input id="homedelivery" @type="text" @value={{@model.homedelivery}} />
     </div>
     <div>
         <label for="location">location</label>
-        <Input @id="location"  @type="text" @value={{this.location}} />
+        <Input id="location"  @type="text" @value={{@model.location}} />
     </div>
     <div>
         <label for="rating">rating</label>
-       <Input @id="rating" @type="text" @value={{this.rating}} />
+       <Input id="rating" @type="text" @value={{@model.rating}} />
     </div>
      <div>
         <label for="stock">stock</label>
-        <Input @id="stock" @type="text" @value={{this.stock}} />
+        <Input id="stock" @type="text" @value={{@model.stock}} />
     </div>
     <div>
         <label for="image">image</label>
-        <Input @id="image" @type="url" @value={{this.image}} />
+        <Input id="image" @type="url" @value={{@model.image}} />
     </div>
     <button type="submit">Edit</button>
 

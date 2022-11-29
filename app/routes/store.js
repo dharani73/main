@@ -13,12 +13,12 @@ export default class StoreRoute extends Route {
   // }
 
   async model(params) {
-    return await this.store.findRecord('post', params.id);
+    return await this.store.findRecord('post', params.post_id);
   }
 }
 
-
-{/* <label for="title">title</label>
+{
+  /* <label for="title">title</label>
        <Input @id="title" @type="text" @value={{model.title}} />
     </div>
     <div>
@@ -41,4 +41,5 @@ export default class StoreRoute extends Route {
         <label for="image">image</label>
         <Input @id="image" @type="url" @value={{model.image}} />
     </div>
-    <button type="submit">Edit</button> */}
+    <button type="submit">Edit</button> */
+}
